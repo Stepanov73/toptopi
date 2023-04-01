@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    font-family: 'Raleway', sans-serif;
+    /* filter: grayscale(100%); */
+    background-color: black;
+    color: white;
+}
+
+h1{
+    width: 80%;
+    font-size: 50px;
+    text-align: center;
+    margin: auto;
+    padding: 40px 0 20px 0;
+    display: inline-block;
+    /* color: rgba(217, 64, 64, 0.119); */
+
+
+}
+
+.firstForm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%) ;
+    width: 50%;
+    border: 2px solid white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.431);
+    text-align: center;
+
+}
+h2{
+    /* width: 30%; */
+    font-size: 26px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: auto;
+    /* margin-top: 20px; */
+}
+.collisity{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+h3{
+    font-size: 30px;
+    width: 70%;
+    display: inline-block;
+
+}
+.minus{
+    width: 15%;   
+    font-size: 30px;
+    display: inline-block;
+    text-decoration: none;
+    color: red;
+    transition: 0.3s;
+}
+.plus:hover{
+    color: white;
+}
+.minus:hover{
+    color: white;
+}
+.plus{
+    width: 15%;
+    transition: 0.3s;
+    color: red;
+    font-size: 30px;
+    display: inline-block;
+    text-decoration: none;
+}
+.start{
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: 0.3s;
+    box-sizing: border-box;
+    border: 2px solid rgba(0, 0, 0, 0);
+    padding: 5px 10px;
+    margin-bottom: 40px;
+    
+
+}
+.start:hover{
+    color: white;
+}
+.wordStart{
+    color: rgb(87, 87, 87);
+    /* width: 30%; */
+    font-size: 30px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 30px;
+    transition: 0.3s;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    margin-bottom: 40px;
+    color: rgba(255, 0, 0, 0);
+}
+.start:hover{
+    border: 2px solid black
+}
+
+.wordStart:hover{
+    color: white;
+    
+}
+.ownV{
+    display: inline-block;
+    font-size: 30px;
+    color: rgb(255, 0, 0);
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+.ownV:hover{
+    color: white;
+
+}
+.firstList{
+    position: absolute;
+    /* display: none; */
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.secondList{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-120%);
+    backdrop-filter: blur(3px);
+    transition: 0.5s;
+    z-index: 4;
+}
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 50%;
+    border: 2px solid black;
+    display: block;
+    /* background-color: white; */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.431);
+
+
+}
+.finish{
+    font-size: 80px;
+    /* color: rgba(255, 0, 0, 0); */
+
+}
+
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 30%;
+    border: 2px solid white;
+    display: block;
+    padding: 60px 0;
+    padding-left: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.408);
+    background-color: black;
+
+}
+.thirdList{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-120%);
+    transition: 0.5s;
+    backdrop-filter: blur(3px);
+    z-index: 3;
+}
+input{
+    width: 80%;
+    font-size: 20px;
+    line-height: 30px;
+    display: inline-block;
+    box-sizing: border-box;
+    padding-left: 10px;
+    border: 2px solid white;
+    outline: none;
+
+
+
+}
+.inputPlus{
+    
+    width: 20%;
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    /* margin-left: 20px; */
+    color: red;
+
+
+
+}
+.inputPlus:hover{
+    color: white;
+}
+p{
+    font-size: 20px;
+    /* color: red; */
+    line-height: 30px;
+    opacity: 0;
+    transition: 3s;
+    color: white;
+}
+
+
+@media (max-width: 500px) {
+    .firstForm{
+        width: 80%;
+    }
+    h1{
+        font-size: 30px;
+        width: 100%;
+    }
+    h2{
+        font-size: 23px;
+    }
+    .ownV{
+        font-size: 23px;
+    }
+    .collisity{
+        width: 50%;
+    }
+    .start{
+        margin-top: 20px;
+    }
+    .container{
+        position: relative;
+        padding: 0;
+        width: 80%;
+        padding-left: 20px;
+    }
+
+    .input{
+        width: calc(80% - 20px);
+        margin-left: 20px;
+
+        display: inline-block;
+    }
+    .inputPlus{
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .finish{
+        font-size: 40px;
+    }
+
+
+
+
+
+
+}
